@@ -146,3 +146,16 @@ SELECT
   CORR(session_engaged, is_purchased) AS corr_engaged_time,
   CORR(engagement_time, is_purchased) as corr_time_purchased
 FROM user_information
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+/* Results
+
+  We analyzed variables that are important for business to understand what may lead  users to make a purchase.
+  To answer this question we used data from Google Analytics.
+  First  we analyzed  the conversation rate for each page path.
+  I focused on the most viewed pages (with 1000 and more viewers) :
+      The pages basket, Shop by Brand/Google and /Google Redesign/Apparel/Mens have the highest conversation rate (more or equal 3%). This suggests that users who srart their sessions from these pages are more likely to make a purchase.
+    Users who start from pages / , asearch.html and  signin.html  have thr lowest conversation rate (less or equal 1.89)
+  Secondly I analysed the correlation between main parameters: purchase events, session_engaged and engagement time . At the end I found a positive correlation (0.326) only between engagement time and purcchased value . It means that users who spend more time engaged are more likely to purchase.
+  
+*/
